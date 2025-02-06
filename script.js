@@ -21,11 +21,21 @@ function submitBan() {
 
     if (selectedOperators.length > 0) {
         alert(`คุณได้แบนตัวละคร: ${selectedOperators.join(', ')}`);
+
+        // อัปเดตไฟล์ banned.json
         fetch("banned.json", {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ banned: selectedOperators })
+        }).then(() => {
+            // ส่งข้อมูลที่ถูกแบนไปยัง ban-character-overlay ผ่าน GitHub Pages
+            fetch("https://sentkuro.github.io/ban-character-overlay/banned.json", {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ banned: selectedOperators })
+            });
         });
+
     } else {
         alert("กรุณาเลือกตัวละครที่ต้องการแบน");
     }
