@@ -5,9 +5,8 @@ fetch("operators.json")
 
         operators.forEach((op, index) => {
             const row = tableBody.insertRow();
-            row.insertCell(0).innerHTML = `<img src="${op.image}" alt="${op.name}">`;
-            row.insertCell(1).textContent = op.name;
-            row.insertCell(2).innerHTML = `<input type="checkbox" id="ban_${index}" value="${op.name}">`;
+            row.insertCell(0).textContent = op.name;
+            row.insertCell(1).innerHTML = `<input type="checkbox" id="ban_${index}" value="${op.name}">`;
         });
     });
 
