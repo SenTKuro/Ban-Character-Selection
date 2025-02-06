@@ -1,5 +1,5 @@
 [
-    { "name": "Exusiai", "class": "Sniper", "rarity": 6, "image": "https://example.com/exusiai.png" },
-    { "name": "SilverAsh", "class": "Guard", "rarity": 6, "image": "https://example.com/silverash.png" },
-    { "name": "Surtr", "class": "Caster", "rarity": 6, "image": "https://example.com/surtr.png" }
+    { "name": "Exusiai", "class": "image": "https://example.com/exusiai.png" },
+    { "name": "SilverAsh", "class": "image": "https://example.com/silverash.png" },
+    { "name": "Surtr", "class": "image": "https://example.com/surtr.png" }
 ]
