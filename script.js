@@ -7,8 +7,6 @@ fetch("operators.json")
             const row = tableBody.insertRow();
             row.insertCell(0).innerHTML = `<img src="${op.image}" alt="${op.name}">`;
             row.insertCell(1).textContent = op.name;
-            row.insertCell(2).textContent = op.class;
-            row.insertCell(3).textContent = '★'.repeat(op.rarity);
             row.insertCell(4).innerHTML = `<input type="checkbox" id="ban_${index}" value="${op.name}">`;
         });
     });
