@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban Character Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>เลือกตัวละครที่ต้องการแบน</h1>
+    <table id="operatorTable">
+        <thead>
+            <tr>
+                <th>รูปภาพ</th>
+                <th>ชื่อ</th>
+                <th>คลาส</th>
+                <th>ความหายาก</th>
+                <th>เลือก</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- แถวของตัวละครจะถูกเพิ่มที่นี่ -->
+        </tbody>
+    </table>
+    <button onclick="submitBan()">ยืนยันการแบน</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
