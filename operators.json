@@ -1,5 +1,5 @@
 [
-    { "name": "Exusiai", "class": "image": "https://example.com/exusiai.png" },
-    { "name": "SilverAsh", "class": "image": "https://example.com/silverash.png" },
-    { "name": "Surtr", "class": "image": "https://example.com/surtr.png" }
+    { "name": "Exusiai", : "image": "https://example.com/exusiai.png" },
+    { "name": "SilverAsh", : "image": "https://example.com/silverash.png" },
+    { "name": "Surtr", : "image": "https://example.com/surtr.png" }
 ]
